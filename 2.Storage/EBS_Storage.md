@@ -3,11 +3,11 @@
 1. Create IAM policy for EBS
 2. attach IAM policy to worker node
 
-## install EBS CSI driver
+## Install EBS CSI driver
 	
 	aws eks describe-addon-versions --addon-name aws-ebs-csi-driver
 	
-# Create resources using kubectl 
+## Create resources using kubectl 
 	kubectl create -f storageclass.yaml
 	kubectl create -f pvc.yaml
 	kubectl create -f deployment.yaml
