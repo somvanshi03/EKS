@@ -1,6 +1,6 @@
 # Prerequsites of EKS:
 
-		# Install eksctl awscli and kubectl utility on windows 
+	# Install eksctl awscli and kubectl utility on windows 
 		
 		> EKSCTL: https://github.com/eksctl-io/eksctl/releases 
 		> AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
