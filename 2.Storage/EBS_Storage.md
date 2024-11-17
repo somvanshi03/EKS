@@ -2,7 +2,15 @@
 1. Create IAM policy for EBS
 2. attach IAM policy to worker node
 3. install EBS CSI driver
-
+# Create resources using kubectl 
+	kubectl create -f storageclass.yaml
+	kubectl create -f pvc.yaml
+	kubectl create -f deployment.yaml
+	kubectl get sc
+	kubectl get pvc 
+	kubectl get deploy 
+	kubectl get all
+	kubectl log -f deployment ebs-deployment
 
 
 
