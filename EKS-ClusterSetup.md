@@ -21,8 +21,10 @@
 
 # Create EKS Node Group:
 		
-		eksctl create nodegroup --cluster eksdemo1 --region ap-south-1 --name mygroup --node-type t2.medium --nodes 2 --nodes-min 1 --nodes-max 3   --managed --node-volume-size=20 --ssh-access --ssh-public-key=Mumbai-Key-101     
+		eksctl create nodegroup --cluster eksdemo1 --region ap-south-1 --name mygroup --node-type t2.medium --nodes 2 --nodes-min 1 --nodes-max 3   --managed --node-volume-size=20 --ssh-access --ssh-public-key=Mumbai-Key-101 
+		
 	# IF you need to install addon along with nodeGroup
+	
 		eksctl create nodegroup --cluster eksdemo1 --region ap-south-1 --name mygroup --node-type t2.medium --nodes 2 --nodes-min 1 --nodes-max 3   --managed --node-volume-size=20 --ssh-access --ssh-public-key=Mumbai-Key-101 --asg-access  --external-dns-access --full-ecr-access  --appmesh-acces  --appmesh-preview-access   --alb-ingress-access --install-neuron-plugin --install-nvidia-plugin
 
 # Update kubeconfig file:
@@ -35,7 +37,8 @@
 
 # List Nodes in current kubernetes cluster:
 
-		kubectl get nodes -o wide	
+		kubectl get nodes 
+		kubectl get nodes -o wide
 		
 
 # Delete Cluster:
