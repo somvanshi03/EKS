@@ -1,4 +1,6 @@
-# Prerequsites of EKS:
+# EKS Cluster setup
+
+## Prerequsites of EKS:
 
 ## Install eksctl awscli and kubectl utility on windows 
 		
