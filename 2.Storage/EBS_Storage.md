@@ -6,6 +6,7 @@
 ## Install EBS CSI driver
 	
 	aws eks describe-addon-versions --addon-name aws-ebs-csi-driver
+	eksctl create addon --name aws-ebs-csi-driver --cluster eksdemo1 --region=ap-south-1  --force
 	
 ## Create resources using kubectl 
 	kubectl create -f storageclass.yaml
