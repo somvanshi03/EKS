@@ -35,7 +35,7 @@
 		
 ## List NodeGroups in a cluster:
 
-		eksctl get nodegroup --cluster=mygroup 
+		eksctl get nodegroup --cluster=eksdemo1
 
 ## List Nodes in current kubernetes cluster:
 
